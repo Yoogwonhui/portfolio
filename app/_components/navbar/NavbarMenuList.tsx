@@ -100,14 +100,14 @@ export default function NavbarMenuList() {
 			subList: [],
 		},
 		{
-			title: 'blog',
+			title: 'Blog',
 			icon: <WebIcon style={styles.icon} />,
 			href: 'https://tomakesure.tistory.com/',
 			type: 'menu',
 			subList: [],
 		},
 		{
-			title: 'github',
+			title: 'Github',
 			icon: <GitHubIcon style={styles.icon} />,
 			href: 'https://github.com/Yoogwonhui',
 			type: 'menu',

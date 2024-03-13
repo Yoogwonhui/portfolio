@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Inter } from 'next/font/google';
-import RecoilRootWrapper from './_recoil/RecoilRootWrapper';
 import MuiThemeProvider from './_components/MuiThemeProvider';
 import NavbarLayout from './_components/navbar/NavbarLayout';
 
@@ -21,9 +20,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${inter.className}`} id="__next">
 				<MuiThemeProvider>
-					<RecoilRootWrapper>
-						<NavbarLayout>{children}</NavbarLayout>
-					</RecoilRootWrapper>
+					<NavbarLayout>{children}</NavbarLayout>
 				</MuiThemeProvider>
 			</body>
 		</html>
