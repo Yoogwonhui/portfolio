@@ -2,3 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #e6e6e6;
+    border-radius: 5px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color:rgba(255,255,255, 1);
+    border-radius: 14px;
+    border: 2px solid #e6e6e6;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255,255,255, 1);
+  }
+
+  
+  .desktop-width {
+    width: calc(100vw - 360px); /* 데스크탑 화면에서는 계산된 너비를 적용 */
+  }
+
+  @media (max-width: 1279px) {
+    /* 모바일 화면 크기를 기준으로 적용 */
+    .desktop-width {
+      width: 100vw;
+    }
+  }
+
+  #__next {
+    margin: 0;
+  }
