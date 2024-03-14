@@ -105,6 +105,7 @@ export default function NavbarMenuList() {
 			href: 'https://tomakesure.tistory.com/',
 			type: 'menu',
 			subList: [],
+			target: '_blank',
 		},
 		{
 			title: 'Github',
@@ -112,6 +113,7 @@ export default function NavbarMenuList() {
 			href: 'https://github.com/Yoogwonhui',
 			type: 'menu',
 			subList: [],
+			target: '_blank',
 		},
 	];
 
@@ -125,6 +127,7 @@ export default function NavbarMenuList() {
 					{menu.type === 'menu' ? (
 						<>
 							<Link
+								target={menu?.target}
 								href={menu.href}
 								style={{ fontSize: 17 }}
 								className={clsx(
