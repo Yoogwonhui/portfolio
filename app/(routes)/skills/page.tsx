@@ -1,9 +1,5 @@
-export default function Page() {
-	return (
-		<div>
-			<div>skill</div>
+import SkillList from './SkillList';
 
-			<div className="my-10"></div>
-		</div>
-	);
+export default function Page() {
+	return <SkillList />;
 }
