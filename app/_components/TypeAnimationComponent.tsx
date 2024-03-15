@@ -10,7 +10,7 @@ export default function TypeAnimationComponent({
 	style?: React.CSSProperties;
 }) {
 	return (
-		<div className="flex text-2xl md:text-4xl">
+		<div className="flex text-base sm:text-2xl md:text-4xl">
 			<TypeAnimation
 				sequence={sequenceList}
 				wrapper="span"

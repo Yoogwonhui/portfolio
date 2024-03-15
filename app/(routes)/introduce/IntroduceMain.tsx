@@ -20,7 +20,7 @@ export default function IntroduceMain() {
 			/>
 
 			{introduceData.introduceList.map((d, index) => (
-				<div key={index} className="text-lg ">
+				<div key={index} className="text-sm md:text-lg ">
 					{d}
 				</div>
 			))}

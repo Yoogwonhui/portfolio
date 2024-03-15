@@ -22,8 +22,9 @@ export default function IntroduceCard({ style }: { style: CSSProperties }) {
 					src={'/images/profile.jpg'}
 					width={250}
 					height={333}
+					priority
 				/>
-				<div className="p-4 ml-4">
+				<div className="md:p-4 md:ml-4 mt-4 md:mt-0">
 					<RowComponent
 						icon={<AccountCircleIcon />}
 						label={introduceData.name}
