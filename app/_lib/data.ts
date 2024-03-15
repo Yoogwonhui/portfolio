@@ -14,3 +14,51 @@ export const introduceData = {
 	university: '충남대학교 컴퓨터공학과',
 	phone: '010-7209-5036',
 };
+
+export const projectData = {
+	interminds_storepop: {
+		name: '(인터마인즈) 무인매장 관리자 웹',
+		skills: {
+			front: [
+				'TypeScript',
+				'React',
+				'Nextjs',
+				'Recoil',
+				'Mui',
+				'Tailwind CSS',
+			],
+			storage: ['AWS S3'],
+		},
+		works: [
+			'지점 등록 / 상태조회 , 진열도 등록 , 상품 등록',
+			'회원 관리 기능',
+			'판매 관리',
+			'환불 및 재결제',
+			'매장 CCTV 영상 확인 기능',
+			'운영 및 배포',
+		],
+	},
+	interminds_pwa: {
+		name: '(인터마인즈) 무인매장 결제 PWA 개발',
+		skills: {
+			front: ['Javascript', 'React', 'Recoil'],
+			storage: ['AWS S3'],
+		},
+		works: [
+			'로그인 기능 ( 카카오로그인 , 자체로그인 )',
+			'결제 api 연동',
+			'적립금 / 쿠폰 관리 기능',
+			'구매내역',
+		],
+	},
+	interminds_admin: { name: '(인터마인즈) 관리자웹 개발' },
+	interminds_cs: { name: '(인터마인즈) CS 관리 웹 개발' },
+	psdl_web: { name: '(오늘은 더치페이) 사장님 웹 개발' },
+	psdl_tablet: { name: '(오늘은 더치페이) Tablet 앱개발' },
+	psdl_app: { name: '(오늘은 더치페이) 앱개발' },
+	bhaptics_login: { name: '(비햅틱스) 통합로그인 웹페이지 제작' },
+	bhaptics_app: { name: '(비햅틱스) 비햅틱스 플레이어 유지보수' },
+	secondGround: { name: '(세컨그라운드) 물품 관리 페이지 제작' },
+	animal: { name: '동물상테스트 웹' },
+	portfolio: { name: '포트폴리오' },
+};
