@@ -23,9 +23,9 @@ export default function NavbarMenuList() {
 
 	const dashboardMenuList = [
 		{
-			title: 'About Me',
+			title: 'introduce',
 			icon: <AccountBoxIcon style={styles.icon} />,
-			href: '/aboutMe',
+			href: '/introduce',
 			type: 'menu',
 			subList: [],
 		},

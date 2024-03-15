@@ -1,9 +1,9 @@
+import IntroduceMain from './(routes)/introduce/IntroduceMain';
+
 export default function Page() {
 	return (
-		<div>
-			<div>H O M E</div>
-
-			<div className="my-10"></div>
+		<div className="flex flex-col items-center">
+			<IntroduceMain />
 		</div>
 	);
 }
