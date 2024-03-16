@@ -8,28 +8,28 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"
-					width={120}
+					width={140}
 					height={40}
 					alt=""
 				/>
 				<Image
 					priority
 					src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
-					width={120}
+					width={130}
 					height={40}
 					alt=""
 				/>
 				<Image
 					priority
 					src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"
-					width={160}
+					width={180}
 					height={40}
 					alt=""
 				/>
 				<Image
 					priority
 					src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"
-					width={160}
+					width={180}
 					height={40}
 					alt=""
 				/>
@@ -43,28 +43,28 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/React Native-222?style=flat-square&logo=React&logoColor=61DAFB"
-					width={180}
+					width={200}
 					height={40}
 					alt=""
 				/>
 				<Image
 					priority
 					src="https://img.shields.io/badge/React PWA-222?style=flat-square&logo=React&logoColor=61DAFB"
-					width={170}
+					width={180}
 					height={40}
 					alt=""
 				/>
 				<Image
 					priority
 					src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white"
-					width={120}
+					width={130}
 					height={40}
 					alt=""
 				/>
 				<Image
 					priority
 					src="https://img.shields.io/badge/Recoil-3578E5?style=flat-square&logo=recoil&logoColor=white"
-					width={120}
+					width={130}
 					height={40}
 					alt=""
 				/>
@@ -106,42 +106,42 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/Aws Amplify-ff9900?style=flat-square&logo=awsamplify&logoColor=white"
-					width={160}
+					width={180}
 					height={40}
 					alt=""
 				/>
 				<Image
 					priority
 					src="https://img.shields.io/badge/Aws S3-569A31?style=flat-square&logo=amazons3&logoColor=white"
-					width={120}
-					height={40}
-					alt=""
-				/>
-				<Image
-					priority
-					src="https://img.shields.io/badge/Aws Cognito-FF9900?style=flat-square&logo=amazonaws&logoColor=white"
-					width={160}
-					height={40}
-					alt=""
-				/>
-				<Image
-					priority
-					src="https://img.shields.io/badge/Git-f05032?style=flat-square&logo=Git&logoColor=white"
-					width={90}
-					height={40}
-					alt=""
-				/>
-				<Image
-					priority
-					src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white"
 					width={140}
 					height={40}
 					alt=""
 				/>
 				<Image
 					priority
+					src="https://img.shields.io/badge/Aws Cognito-FF9900?style=flat-square&logo=amazonaws&logoColor=white"
+					width={180}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
+					src="https://img.shields.io/badge/Git-f05032?style=flat-square&logo=Git&logoColor=white"
+					width={100}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
+					src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white"
+					width={150}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
 					src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
-					width={120}
+					width={130}
 					height={40}
 					alt=""
 				/>
@@ -151,7 +151,7 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/MUI-007FFF?style=flat-square&logo=mui&logoColor=white"
-					width={120}
+					width={100}
 					height={40}
 					alt=""
 				/>
@@ -165,7 +165,7 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/Styled Components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white"
-					width={200}
+					width={220}
 					height={40}
 					alt=""
 				/>
@@ -179,7 +179,7 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/Zeplin-F0D722?style=flat-square&logo=Zeplin&logoColor=white"
-					width={100}
+					width={90}
 					height={40}
 					alt=""
 				/>
@@ -196,7 +196,7 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
-					width={160}
+					width={180}
 					height={40}
 					alt=""
 				/>
@@ -210,14 +210,14 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/Amazon S3-569a31?style=flat-square&logo=amazons3&logoColor=white"
-					width={140}
+					width={160}
 					height={40}
 					alt=""
 				/>
 				<Image
 					priority
 					src="https://img.shields.io/badge/Amazon DynamoDB-4053d6?style=flat-square&logo=amazondynamodb&logoColor=white"
-					width={200}
+					width={240}
 					height={40}
 					alt=""
 				/>
@@ -234,6 +234,13 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white"
+					width={180}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
+					src="https://img.shields.io/badge/AWS IoT Core-660066?style=flat-square&logo=mqtt&logoColor=white"
 					width={180}
 					height={40}
 					alt=""
