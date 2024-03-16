@@ -1,6 +1,6 @@
 import Card from '@mui/material/Card';
 import Image from 'next/image';
-import { introduceData } from '../_lib/data';
+import { introduceData, workData } from '../_lib/data';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CakeIcon from '@mui/icons-material/Cake';
 import HomeIcon from '@mui/icons-material/Home';
@@ -16,7 +16,7 @@ export default function IntroduceCard({ style }: { style: CSSProperties }) {
 			style={style}
 		>
 			<div className="text-center pb-4 text-xl font-semibold">ABOUT</div>
-			<div className="flex flex-col md:flex-row">
+			<div className="flex flex-col md:flex-row px-6 md:px-0">
 				<Image
 					alt="profile"
 					src={'/images/profile.jpg'}
@@ -49,6 +49,18 @@ export default function IntroduceCard({ style }: { style: CSSProperties }) {
 						icon={<SchoolIcon />}
 						label={introduceData.university}
 					/>
+				</div>
+
+				<div>
+					{workData.map((work, index) => (
+						<div className="p-1 min-w-40" key={index}>
+							<div className="font-semibold text-lg">{`- ${work.company}`}</div>
+							<div className="text-sm">{`${work.department} / ${work.position}`}</div>
+							<div className="text-sm text-gray-500">
+								{`( ${work.period} )`}
+							</div>
+						</div>
+					))}
 				</div>
 			</div>
 		</Card>

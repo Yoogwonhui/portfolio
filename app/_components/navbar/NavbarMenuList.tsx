@@ -93,13 +93,6 @@ export default function NavbarMenuList() {
 			type: 'list',
 		},
 		{
-			title: 'Work Experience',
-			icon: <BusinessIcon style={styles.icon} />,
-			href: '/experience',
-			type: 'menu',
-			subList: [],
-		},
-		{
 			title: 'Blog',
 			icon: <WebIcon style={styles.icon} />,
 			href: 'https://tomakesure.tistory.com/',
