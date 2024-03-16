@@ -14,7 +14,7 @@ export default function Page() {
 			<h2>Projects</h2>
 
 			<div className="flex w-full flex-wrap  md:p-10 box-border">
-				{Object.entries(projectData).map(([key, value], index) => (
+				{Object.entries(projectData).map(([key, value]: any, index) => (
 					<div
 						key={index}
 						className="w-1/2 md:w-1/3 lg:w-1/4 p-4 hover:p-2 box-border"
