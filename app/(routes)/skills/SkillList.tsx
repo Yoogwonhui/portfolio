@@ -259,6 +259,22 @@ export default function SkillList() {
 					height={40}
 					alt=""
 				/>
+
+				<Image
+					priority
+					src="https://img.shields.io/badge/AWS CodeDeploy-FF9900?style=flat-square"
+					width={200}
+					height={40}
+					alt=""
+				/>
+
+				<Image
+					priority
+					src="https://img.shields.io/badge/Github Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"
+					width={200}
+					height={40}
+					alt=""
+				/>
 			</div>
 		</div>
 	);
