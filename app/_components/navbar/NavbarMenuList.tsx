@@ -7,10 +7,10 @@ import clsx from 'clsx';
 import { useState } from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
-import BusinessIcon from '@mui/icons-material/Business';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import WebIcon from '@mui/icons-material/Web';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import HomeIcon from '@mui/icons-material/Home';
 
 const styles = {
 	icon: {
@@ -115,36 +115,23 @@ export default function NavbarMenuList() {
 			className="flex flex-col overflow-auto p-6"
 			style={{ height: 'calc(100vh - 80px)' }}
 		>
+			<div className="xl:hidden ">
+				<LinkComponent
+					menu={{
+						title: 'Home',
+						icon: <HomeIcon style={styles.icon} />,
+						href: '/',
+						type: 'menu',
+						subList: [],
+					}}
+					pathname={pathname}
+				/>
+			</div>
+
 			{dashboardMenuList.map((menu, index) => (
 				<div key={index}>
 					{menu.type === 'menu' ? (
-						<>
-							<Link
-								target={menu?.target}
-								href={menu.href}
-								style={{ fontSize: 17 }}
-								className={clsx(
-									'flex items-center gap-3 no-underline py-3 font-medium hover:text-blue-500 hover:font-semibold bg-white',
-									{
-										'text-black':
-											'/' + pathname.split('/')[1] !==
-											menu.href,
-										'text-[#1b60ff]':
-											'/' + pathname.split('/')[1] ===
-											menu.href,
-										'font-semibold':
-											'/' + pathname.split('/')[1] ===
-											menu.href,
-									}
-								)}
-							>
-								<div style={{ width: 16, textAlign: 'center' }}>
-									-
-								</div>
-								{menu.icon}
-								<span className="pb-[2px]">{menu.title}</span>
-							</Link>
-						</>
+						<LinkComponent menu={menu} pathname={pathname} />
 					) : (
 						<MenuList menu={menu} />
 					)}
@@ -217,5 +204,28 @@ const MenuList = ({ menu }: any) => {
 				))}
 			</div>
 		</>
+	);
+};
+
+const LinkComponent = ({ menu, pathname }: { menu: any; pathname: string }) => {
+	return (
+		<Link
+			target={menu?.target}
+			href={menu.href}
+			style={{ fontSize: 17 }}
+			className={clsx(
+				'flex items-center gap-3 no-underline py-3 font-medium hover:text-blue-500 hover:font-semibold bg-white',
+				{
+					'text-black': '/' + pathname.split('/')[1] !== menu.href,
+					'text-[#1b60ff]':
+						'/' + pathname.split('/')[1] === menu.href,
+					'font-semibold': '/' + pathname.split('/')[1] === menu.href,
+				}
+			)}
+		>
+			<div style={{ width: 16, textAlign: 'center' }}>-</div>
+			{menu.icon}
+			<span className="pb-[2px]">{menu.title}</span>
+		</Link>
 	);
 };
