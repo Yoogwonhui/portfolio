@@ -92,7 +92,14 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/NPM-CB3837?style=flat-square&logo=npm&logoColor=white"
-					width={120}
+					width={110}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
+					src="https://img.shields.io/badge/PM2-2B037A?style=flat-square&logo=pm2&logoColor=white"
+					width={110}
 					height={40}
 					alt=""
 				/>
@@ -105,7 +112,35 @@ export default function SkillList() {
 				/>
 				<Image
 					priority
+					src="https://img.shields.io/badge/Aws S3-569A31?style=flat-square&logo=amazons3&logoColor=white"
+					width={120}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
+					src="https://img.shields.io/badge/Aws Cognito-FF9900?style=flat-square&logo=amazonaws&logoColor=white"
+					width={160}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
 					src="https://img.shields.io/badge/Git-f05032?style=flat-square&logo=Git&logoColor=white"
+					width={90}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
+					src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white"
+					width={140}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
+					src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
 					width={120}
 					height={40}
 					alt=""
@@ -144,14 +179,14 @@ export default function SkillList() {
 				<Image
 					priority
 					src="https://img.shields.io/badge/Zeplin-F0D722?style=flat-square&logo=Zeplin&logoColor=white"
-					width={120}
+					width={100}
 					height={40}
 					alt=""
 				/>
 				<Image
 					priority
 					src="https://img.shields.io/badge/Figma-f24e1e?style=flat-square&logo=figma&logoColor=white"
-					width={140}
+					width={120}
 					height={40}
 					alt=""
 				/>
@@ -183,6 +218,37 @@ export default function SkillList() {
 					priority
 					src="https://img.shields.io/badge/Amazon DynamoDB-4053d6?style=flat-square&logo=amazondynamodb&logoColor=white"
 					width={200}
+					height={40}
+					alt=""
+				/>
+			</div>
+			<div className="text-2xl font-semibold pb-4 pt-8">Tried it 👊</div>
+			<div className="flex flex-wrap gap-2">
+				<Image
+					priority
+					src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white"
+					width={160}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
+					src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white"
+					width={180}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
+					src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"
+					width={140}
+					height={40}
+					alt=""
+				/>
+				<Image
+					priority
+					src="https://img.shields.io/badge/InfluxDB-22ADF6?style=flat-square&logo=influxdb&logoColor=white"
+					width={140}
 					height={40}
 					alt=""
 				/>
