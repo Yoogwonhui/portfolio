@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Chip from '@mui/material/Chip';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import ModalComponent from '@/app/_components/ModalComponent';
 
 export default function Page({ params }: { params: { projectName: string } }) {
 	const projectName = params.projectName;
@@ -114,14 +115,34 @@ export default function Page({ params }: { params: { projectName: string } }) {
 							key={index}
 							className="border border-solid border-gray-200 rounded"
 						>
-							<img
-								src={`/images/projects/${projectName}/${
-									index + 1
-								}.png`}
-								alt=""
-								loading="lazy"
-								style={{ width: '100%', height: 'auto' }}
-							/>
+							<ModalComponent
+								isVertical={projectInfo.imgRatio === 'vertical'}
+								buttonChildren={
+									<img
+										src={`/images/projects/${projectName}/${
+											index + 1
+										}.png`}
+										alt=""
+										loading="lazy"
+										style={{
+											width: '100%',
+											height: 'auto',
+										}}
+									/>
+								}
+							>
+								<img
+									src={`/images/projects/${projectName}/${
+										index + 1
+									}.png`}
+									alt=""
+									loading="lazy"
+									style={{
+										width: '100%',
+										height: 'auto',
+									}}
+								/>
+							</ModalComponent>
 						</ImageListItem>
 					))}
 				</ImageList>
