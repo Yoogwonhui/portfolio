@@ -1,5 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
+
 import { projectData } from '@/app/_lib/data';
 import Link from 'next/link';
+import Chip from '@mui/material/Chip';
 
 export default function Page({ params }: { params: { projectName: string } }) {
 	const projectName = params.projectName;
@@ -11,20 +14,32 @@ export default function Page({ params }: { params: { projectName: string } }) {
 	const period = projectInfo.period;
 	const scope = projectInfo.scope;
 	const url = projectInfo.url;
+	const imgCount = projectInfo.imgCount;
 
 	return (
 		<div>
-			<div className="text-2xl font-semibold">{projectInfo.name}</div>
+			<div className="text-xl md:text-2xl font-semibold">
+				{projectInfo.name}
+			</div>
 			<div>{period}</div>
+
+			<div>{imgCount}</div>
 
 			{skills && (
 				<>
 					<div className="font-bold text-lg mt-6">사용 기술</div>
 					{Object.entries(skills).map(([key, value], index) => (
-						<div key={index} className="flex gap-2">
+						<div
+							key={index}
+							className="flex flex-wrap gap-1 items-center mt-1"
+						>
 							<div className="font-semibold">{key}</div>
 							{(value as string[]).map((skill, idx) => (
-								<div key={idx}>{skill}</div>
+								<Chip
+									key={idx}
+									label={skill}
+									variant="outlined"
+								/>
 							))}
 						</div>
 					))}
