@@ -67,6 +67,7 @@ export const projectData: any = {
 		scope: '프론트엔드',
 		period: '2023/11/20 ~ 2024/03/04',
 		imgCount: 11,
+		imgRatio: 'vertical',
 	},
 	interminds_admin: {
 		name: '(인터마인즈) 관리자웹',
@@ -224,6 +225,7 @@ export const projectData: any = {
 		scope: '프론트엔드',
 		period: '2022/05/02 ~ 2022/08/12',
 		imgCount: 6,
+		imgRatio: 'vertical',
 	},
 	bhaptics_login: {
 		name: '(비햅틱스) 통합로그인 웹페이지',
@@ -250,6 +252,7 @@ export const projectData: any = {
 		period: '2021/10/04 ~ 2021/10/22',
 		imgCount: 3,
 		url: 'https://login.bhaptics.com/',
+		imgRatio: 'vertical',
 	},
 	bhaptics_app: {
 		name: '(비햅틱스) 비햅틱스 플레이어',
@@ -279,6 +282,7 @@ export const projectData: any = {
 		scope: '프론트엔드 및 백엔드',
 		period: '2021/08/16 ~ 2021/12/17',
 		imgCount: 2,
+		imgRatio: 'vertical',
 	},
 	secondGround: {
 		name: '(세컨그라운드) 물품 관리 페이지',
